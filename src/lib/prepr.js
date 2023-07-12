@@ -1,5 +1,5 @@
 export async function Prepr(query, variables) {
-    const response = await fetch(`${process.env.GATSBY_PREPR_EINDPOINT}`, {
+    const response = await fetch(`${process.env.PREPR_EINDPOINT}`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
