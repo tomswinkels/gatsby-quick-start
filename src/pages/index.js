@@ -1,4 +1,5 @@
 import * as React from "react"
+import { Link } from "gatsby"
 import {Prepr} from "../lib/prepr.js";
 import GetArticles from "../queries/get-articles.js";
 
@@ -14,7 +15,7 @@ const IndexPage = ({ serverData }) => {
             <ul>
                 {articles.items.map(article => (
                     <li key={article._id}>
-                        <a href={article._slug}>{article.title}</a>
+                        <Link to={article._slug}>{article.title}</Link>
                     </li>
                 ))}
             </ul>
